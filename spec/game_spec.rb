@@ -21,6 +21,10 @@ require 'spec_helper'
           expect(subject.turn).to eq(player_2)
         end
 
+        it 'starts as player 1 turn' do
+          expect(subject.turn).to eq(player_1)
+        end
+
         it 'raises error is player goes twice in a row' do
           allow(player_2).to receive(:reduce_heath)
           game.hit(player_2)
