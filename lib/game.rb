@@ -21,7 +21,7 @@ class Game
   end
 
   def turn
-    @turn
+    @turn 
   end
 
 end
